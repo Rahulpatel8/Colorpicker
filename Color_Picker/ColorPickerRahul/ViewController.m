@@ -39,7 +39,7 @@
 	[((ColorPickerController*)controller) dismissViewControllerAnimated:true completion:nil];
 }
 
-- (IBAction)colorSliderColorChanged:(colorSlider *)sender {
+- (IBAction)colorSliderColorChanged:(ColorSlider *)sender {
     [_btn setBackgroundColor:sender.color];
 }
 
