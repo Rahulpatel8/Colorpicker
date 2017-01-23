@@ -21,6 +21,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    sliderColor.alphaValue = alphaSlider.value;
 	alphaSlider.colorValue = sliderColor.value;
 	float value = sliderColor.value;
 	alphaSlider.value = 0.0;

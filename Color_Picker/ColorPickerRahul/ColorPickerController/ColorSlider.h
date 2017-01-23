@@ -10,5 +10,6 @@
 @interface ColorSlider : UISlider {
     
 }
+@property (nonatomic) CGFloat alphaValue;
 @property (getter=color, nonatomic,readonly) UIColor *color;
 @end

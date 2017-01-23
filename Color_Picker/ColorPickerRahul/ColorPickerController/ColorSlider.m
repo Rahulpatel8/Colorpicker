@@ -9,7 +9,6 @@
 #import "ColorSlider.h"
 
 @implementation ColorSlider {
-    UIColor *colorTemp;
 }
 
 
@@ -18,7 +17,7 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     for (int x = 0; x < self.frame.size.width ; x++) {
-        UIColor *color = [UIColor colorWithHue:((float)x/self.frame.size.width) saturation:1.0 brightness:1.0 alpha:1.0];
+        UIColor *color = [UIColor colorWithHue:((float)x/self.frame.size.width) saturation:1.0 brightness:1.0 alpha:(1.0 - _alphaValue)];
         [color set];
         CGRect rectnew = CGRectMake(x, self.frame.size.height/2 - 2, self.frame.size.width * x, 4);
         UIRectFill(rectnew);
@@ -27,14 +26,8 @@
     [self setMaximumTrackImage:[self imageFromColor:[UIColor clearColor]] forState:UIControlStateNormal];
 }
 
--(void)setValue:(float)value animated:(BOOL)animated{
-    [super setValue:value animated:animated];
-    UIColor *color = [UIColor colorWithHue:self.value saturation:1.0 brightness:1.0 alpha:1.0];
-    colorTemp = color;
-}
-
 -(UIColor *)color {
-    return colorTemp;
+    return [UIColor colorWithHue:self.value saturation:1.0 brightness:1.0 alpha:(1.0 - _alphaValue)];
 }
 
 - (UIImage *)imageFromColor:(UIColor *)color {
