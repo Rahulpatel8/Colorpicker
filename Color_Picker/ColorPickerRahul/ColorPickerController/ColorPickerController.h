@@ -9,7 +9,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import "colorSlider.h"
+#import "ColorSlider.h"
 #import "AlphaSlider.h"
 
 @protocol ColorPickerDelegate
@@ -18,7 +18,7 @@
 
 @end
 @interface ColorPickerController : UIViewController {
-    __weak IBOutlet colorSlider *sliderColor;
+    __weak IBOutlet ColorSlider *sliderColor;
     __weak IBOutlet AlphaSlider *alphaSlider;
 }
 

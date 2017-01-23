@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface colorSlider : UISlider {
+@interface ColorSlider : UISlider {
     
 }
 @property (getter=color, nonatomic,readonly) UIColor *color;

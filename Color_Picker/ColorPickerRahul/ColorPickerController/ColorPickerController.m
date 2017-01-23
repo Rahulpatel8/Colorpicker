@@ -30,13 +30,7 @@
 	}
 	
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)sliderColorChanged:(colorSlider *)sender {
+- (IBAction)sliderColorChanged:(ColorSlider *)sender {
     float value = sliderColor.value;
     for (UIButton *btn in buttons) {
         int i = (int)[buttons indexOfObject:btn];
@@ -53,28 +47,22 @@
         btn.backgroundColor = [UIColor colorWithHue:(value) saturation:(i + 0.1) brightness:1.0 alpha:(1 - sender.value)];
     }
 }
-
-
-
 - (IBAction)buttonClicked:(UIButton *)sender {
     if (self.delegate) {
         [self.delegate colorPickerControllerDidComplete:self :sender.backgroundColor];
     }
-//    self.completion([sender backgroundColor]);
 }
 
 - (IBAction)btnOkClicked:(UIButton *)sender {
     if (self.delegate) {
         [self.delegate colorPickerControllerDidComplete:self :sliderColor.color];
     }
-//    self.completion([sliderColor color]);
 }
 
 - (IBAction)btnCancelClicked:(UIButton *)sender {
     if (self.delegate) {
         [self.delegate colorPickerControllerDidComplete:self :nil];
     }
-//    self.completion(nil);
 }
 
 @end

@@ -16,7 +16,7 @@
 		4BEDF3361E20BF760027D401 /* AlphaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDF3301E20BF760027D401 /* AlphaSlider.m */; };
 		4BEDF3371E20BF760027D401 /* ColorPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDF3321E20BF760027D401 /* ColorPickerController.m */; };
 		4BEDF3381E20BF760027D401 /* ColorPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BEDF3331E20BF760027D401 /* ColorPickerController.xib */; };
-		4BEDF3391E20BF760027D401 /* colorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDF3351E20BF760027D401 /* colorSlider.m */; };
+		4BEDF3391E20BF760027D401 /* ColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDF3351E20BF760027D401 /* ColorSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +35,8 @@
 		4BEDF3311E20BF760027D401 /* ColorPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerController.h; sourceTree = "<group>"; };
 		4BEDF3321E20BF760027D401 /* ColorPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerController.m; sourceTree = "<group>"; };
 		4BEDF3331E20BF760027D401 /* ColorPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerController.xib; sourceTree = "<group>"; };
-		4BEDF3341E20BF760027D401 /* colorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorSlider.h; sourceTree = "<group>"; };
-		4BEDF3351E20BF760027D401 /* colorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorSlider.m; sourceTree = "<group>"; };
+		4BEDF3341E20BF760027D401 /* ColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSlider.h; sourceTree = "<group>"; };
+		4BEDF3351E20BF760027D401 /* ColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 				4BEDF3311E20BF760027D401 /* ColorPickerController.h */,
 				4BEDF3321E20BF760027D401 /* ColorPickerController.m */,
 				4BEDF3331E20BF760027D401 /* ColorPickerController.xib */,
-				4BEDF3341E20BF760027D401 /* colorSlider.h */,
-				4BEDF3351E20BF760027D401 /* colorSlider.m */,
+				4BEDF3341E20BF760027D401 /* ColorSlider.h */,
+				4BEDF3351E20BF760027D401 /* ColorSlider.m */,
 			);
 			path = ColorPickerController;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			files = (
 				4BEDF3371E20BF760027D401 /* ColorPickerController.m in Sources */,
 				4B353DE41E0A545A0088A619 /* ViewController.m in Sources */,
-				4BEDF3391E20BF760027D401 /* colorSlider.m in Sources */,
+				4BEDF3391E20BF760027D401 /* ColorSlider.m in Sources */,
 				4BEDF3361E20BF760027D401 /* AlphaSlider.m in Sources */,
 				4B353DE11E0A545A0088A619 /* AppDelegate.m in Sources */,
 				4B353DDE1E0A545A0088A619 /* main.m in Sources */,

@@ -6,9 +6,9 @@
 //  Copyright © 2016 SOTSYS024. All rights reserved.
 //
 
-#import "colorSlider.h"
+#import "ColorSlider.h"
 
-@implementation colorSlider {
+@implementation ColorSlider {
     UIColor *colorTemp;
 }
 
