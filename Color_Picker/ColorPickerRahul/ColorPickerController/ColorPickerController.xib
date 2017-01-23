@@ -42,7 +42,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AB4-1X-g8g">
                     <rect key="frame" x="35" y="159" width="250" height="250"/>
                     <subviews>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="x7n-K1-gI1" customClass="colorSlider">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="x7n-K1-gI1" customClass="ColorSlider">
                             <rect key="frame" x="6" y="122.5" width="238" height="31"/>
                             <color key="thumbTintColor" red="0.43529411759999997" green="0.80784313730000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>

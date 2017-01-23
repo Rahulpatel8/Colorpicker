@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "colorSlider.h"
+#import "ColorSlider.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
