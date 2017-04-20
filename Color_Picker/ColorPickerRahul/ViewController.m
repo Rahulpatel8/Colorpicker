@@ -34,9 +34,13 @@
 }
 
 
--(void)colorPickerControllerDidComplete:(id)controller :(UIColor *)color {
+-(void)colorPickerController:(ColorPickerController*)controller didPickColor:(UIColor *)color {
 	[self.view setBackgroundColor:color];
-	[((ColorPickerController*)controller) dismissViewControllerAnimated:true completion:nil];
+	[controller dismissViewControllerAnimated:true completion:nil];
+}
+
+-(void)colorPickerControllerDidCancel:(ColorPickerController *)controller {
+    [controller dismissViewControllerAnimated:true completion:nil];
 }
 
 - (IBAction)colorSliderColorChanged:(ColorSlider *)sender {

@@ -24,10 +24,12 @@
     sliderColor.alphaValue = alphaSlider.value;
 	alphaSlider.colorValue = sliderColor.value;
 	float value = sliderColor.value;
+    sliderColor.superview.layer.cornerRadius = 15;
 	alphaSlider.value = 0.0;
 	for (UIButton *btn in buttons) {
 		int i = (int)[buttons indexOfObject:btn];
 		btn.backgroundColor = [UIColor colorWithHue:(value) saturation:(i + 0.1) brightness:1.0 alpha:(1 - alphaSlider.value)];
+        btn.layer.cornerRadius = btn.frame.size.height / 2;
 	}
 	
 }
@@ -50,19 +52,19 @@
 }
 - (IBAction)buttonClicked:(UIButton *)sender {
     if (self.delegate) {
-        [self.delegate colorPickerControllerDidComplete:self :sender.backgroundColor];
+        [self.delegate colorPickerController:self didPickColor:sender.backgroundColor];
     }
 }
 
 - (IBAction)btnOkClicked:(UIButton *)sender {
     if (self.delegate) {
-        [self.delegate colorPickerControllerDidComplete:self :sliderColor.color];
+        [self.delegate colorPickerController:self didPickColor:sliderColor.color];
     }
 }
 
 - (IBAction)btnCancelClicked:(UIButton *)sender {
     if (self.delegate) {
-        [self.delegate colorPickerControllerDidComplete:self :nil];
+        [self.delegate colorPickerControllerDidCancel:self];
     }
 }
 

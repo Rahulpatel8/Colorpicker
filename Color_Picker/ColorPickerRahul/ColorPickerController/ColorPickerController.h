@@ -12,11 +12,8 @@
 #import "ColorSlider.h"
 #import "AlphaSlider.h"
 
-@protocol ColorPickerDelegate
-@required
--(void)colorPickerControllerDidComplete:(id)controller :(UIColor *)color;
+@protocol ColorPickerDelegate;
 
-@end
 @interface ColorPickerController : UIViewController {
     __weak IBOutlet ColorSlider *sliderColor;
     __weak IBOutlet AlphaSlider *alphaSlider;
@@ -24,4 +21,10 @@
 
 @property (nonatomic) id<ColorPickerDelegate> delegate;
 
+@end
+
+@protocol ColorPickerDelegate
+@required
+-(void)colorPickerController:(ColorPickerController*)controller didPickColor:(UIColor *)color;
+-(void)colorPickerControllerDidCancel:(ColorPickerController*)controller;
 @end
